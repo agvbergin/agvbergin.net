@@ -178,15 +178,6 @@ a[href].post-tag:focus {
   align-self: center;
 }
 
-/* Warning */
-.warning {
-  background-color: #ffc;
-  padding: 1em 0.625em; /* 16px 10px /16 */
-}
-.warning ol:only-child {
-  margin: 0;
-}
-
 /* Direct Links / Markdown Headers */
 .direct-link {
   font-family: sans-serif;
