@@ -1,4 +1,39 @@
 :root {
-    background-color: #ccc;
-    font-size: 20px;
+    background-color: linen;
+    font-size: 125%; /*20px*/
 }
+
+body {
+  min-height: 100vh;
+  line-height: 1.75;
+  max-inline-size: 60ch;
+  margin-inline: auto;
+  padding-inline: 1em;
+}
+
+p {margin-bottom: 1rem;}
+
+footer > p {margin-bottom: initial;}
+
+h2, h3, h4, h5 {
+    margin: 3rem 0 1.38rem;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 400;  
+  line-height: 1.3;
+}
+
+h1 {
+  font-size: 2.488rem;
+}
+
+h2 {font-size: 2.074rem;}
+
+h3 {font-size: 1.728rem;}
+
+h4 {font-size: 1.44rem;}
+
+h5 {font-size: 1.2rem;}
+
+small, .text_small {font-size: 0.833rem;}
