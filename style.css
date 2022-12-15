@@ -1,7 +1,10 @@
 :root {
     background-color: linen;
     font-size: 125%; /*20px*/
+    font-family: 'Times New Roman', Times, serif;
 }
+
+/* Typography */
 
 body {
   min-height: 100vh;
@@ -37,3 +40,18 @@ h4 {font-size: 1.44rem;}
 h5 {font-size: 1.2rem;}
 
 small, .text_small {font-size: 0.833rem;}
+
+/* Header class */
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+div.avatar {
+  align-self: center;
+}
+
+img.avatar {
+  width: 10ch;
+}
