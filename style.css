@@ -41,6 +41,16 @@ h5 {font-size: 1.2rem;}
 
 small, .text_small {font-size: 0.833rem;}
 
+/* Skip-link class */
+
+a.skip-link:focus {
+  color: initial;
+}
+
+a.skip-link {
+  color: linen;
+}
+
 /* Header class */
 
 header {
