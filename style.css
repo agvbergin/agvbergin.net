@@ -1,5 +1,6 @@
 :root {
-    background-color: linen;
+    --base-color: linen;
+    background-color: var(--base-color);
     font-size: 125%; /*20px*/
     font-family: 'Times New Roman', Times, serif;
 }
@@ -48,7 +49,7 @@ a.skip-link:focus {
 }
 
 a.skip-link {
-  color: linen;
+  color: var(--base-color);
 }
 
 /* Header class */
