@@ -4,8 +4,8 @@
   "description": "Repo for agvbergin.net, my personal website.",
   "main": "index.js",
   "scripts": {
-    "build": "eleventy --serve",
-    "start": "eleventy"
+    "start": "eleventy --serve",
+    "build": "eleventy"
   },
   "repository": {
     "type": "git",
