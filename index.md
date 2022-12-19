@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Ann Bergin's Personal Website</title>
     <meta name="description" content="The personal website of Ann Bergin (@agvbergin).">
+    <meta name="generator" content="Eleventy v1.0.2">
 </head>
 <body>
     <header>
         <h1>Ann Bergin's Personal Website</h1>
         <div class="avatar">
-        <img class="avatar" src="coffeeMini.png" alt="Cartoon avatar Ann (middle-aged white lady with glasses and short brown hair) pours coffee into a mug with a heart on it. Coffee is love.">
+        <img class="avatar" src="img/coffeeMini.png" alt="Cartoon avatar Ann (middle-aged white lady with glasses and short brown hair) pours coffee into a mug with a heart on it. Coffee is love.">
         </div>
     </header>
     <main>
