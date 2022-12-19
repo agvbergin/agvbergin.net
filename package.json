@@ -1,0 +1,24 @@
+{
+  "name": "agvbergin.net",
+  "version": "0.0.1",
+  "description": "Repo for agvbergin.net, my personal website.",
+  "main": "index.js",
+  "scripts": {
+    "build": "eleventy --serve",
+    "start": "eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agvbergin/agvbergin.net.git"
+  },
+  "keywords": [],
+  "author": "Ann Bergin",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/agvbergin/agvbergin.net/issues"
+  },
+  "homepage": "https://github.com/agvbergin/agvbergin.net#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.2"
+  }
+}
