@@ -1,0 +1,18 @@
+---
+"layout": "base.njk"
+---
+
+<article>{{ content | safe }}</article>
+
+{%- if collections.blog %}
+{%- set nextPost = collections.blog | getNextCollectionItem(page) %}
+{%- set previousPost = collections.blog | getPreviousCollectionItem(page) %}
+{%- if nextPost or previousPost %}
+<nav>
+<ul role="list">
+  {%- if nextPost %}<li><a href="{{ nextPost.url | url }}">☜ Next</a></li>{% endif %}
+  {%- if previousPost %}<li><a href="{{ previousPost.url | url }}">Previous ☞</a></li>{% endif %}
+</ul>
+</nav>
+{%- endif %}
+{%- endif %}
