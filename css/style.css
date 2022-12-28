@@ -91,6 +91,36 @@ footer {
   padding-bottom: 0.5em;
 }
 
+article {
+  max-width: 66ch;
+}
+
+article > * + * {
+  margin-top: 1em;
+}
+
+blockquote {
+  border-left: solid black 2px;
+  padding: 10px;
+}
+
+blockquote > p {
+  font-style: italic;
+}
+
+pre {
+  border: solid black 2px;
+  border-radius: 5px;
+  padding: 10px;
+  overflow: auto;
+  font-size: inherit;
+  line-height: 1;
+}
+
+div.agvb {
+  font-family: cursive;
+}
+
 img.avatar {
   width: 10ch;
 }
