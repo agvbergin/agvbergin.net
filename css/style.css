@@ -117,8 +117,23 @@ pre {
   line-height: 1;
 }
 
+div.identity {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+nav > ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  padding: 0;
+}
+
 div.agvb {
-  font-family: cursive;
+  font-family: cursive, serif;
+  font-size: 200%;
 }
 
 img.avatar {
