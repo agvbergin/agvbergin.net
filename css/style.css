@@ -136,10 +136,6 @@ div.agvb {
   font-size: 200%;
 }
 
-img.avatar {
-  width: 10ch;
-}
-
 ul.blog-nav {
   display: flex;
   flex-wrap: wrap;
