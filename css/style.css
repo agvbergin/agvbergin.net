@@ -139,3 +139,9 @@ div.agvb {
 img.avatar {
   width: 10ch;
 }
+
+ul.blog-nav {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
