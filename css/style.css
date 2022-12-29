@@ -79,11 +79,21 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
+}
+
+header, main {
+  padding: 1em 1em 0 1em;
+}
+
+footer {
   padding: 1em 1em 0 1em;
 }
 
 main {
   flex: 1 0 auto; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+  max-width: 66ch;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
 }
 
 footer {
@@ -91,17 +101,21 @@ footer {
   padding-bottom: 0.5em;
 }
 
-article {
+main {
   max-width: 66ch;
 }
 
 article > * + * {
-  margin-top: 1em;
+  margin-top: 1.5rem;
+}
+
+article > p:last-child {
+  margin-bottom: 1em;
 }
 
 blockquote {
-  border-left: solid black 2px;
-  padding: 10px;
+  border-left: solid black 3px;
+  padding-left: 10px;
 }
 
 blockquote > p {
@@ -109,7 +123,7 @@ blockquote > p {
 }
 
 pre {
-  border: solid black 2px;
+  border: solid black 3px;
   border-radius: 5px;
   padding: 10px;
   overflow: auto;
@@ -117,7 +131,7 @@ pre {
   line-height: 1;
 }
 
-div.identity {
+header {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -127,17 +141,26 @@ div.identity {
 nav > ul {
   display: flex;
   flex-wrap: wrap;
-  gap: 1em;
   padding: 0;
 }
 
-div.agvb {
-  font-family: cursive, serif;
-  font-size: 200%;
+nav > ul li {
+  margin-right: 0.5em;
 }
 
 ul.blog-nav {
   display: flex;
   flex-wrap: wrap;
   padding: 0;
+}
+
+/* Typography */
+
+h1, h2, h3, h4 {
+  font-family: sans-serif;
+}
+
+footer {
+  font-size: small;
+  text-align: center;
 }
