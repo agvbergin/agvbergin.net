@@ -141,7 +141,7 @@ header {
 nav > ul {
   display: flex;
   flex-wrap: wrap;
-  padding: 0;
+  padding: 0 0 0 1em;
 }
 
 nav > ul li {
@@ -152,6 +152,32 @@ ul.blog-nav {
   display: flex;
   flex-wrap: wrap;
   padding: 0;
+}
+
+/* Links */
+
+header a {
+  font-family: sans-serif;
+}
+
+a:link {
+  color: black;
+} 
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline solid 5px;
+  text-decoration-skip-ink: none;
+}
+
+a:focus, a:active {
+  text-decoration: underline solid 5px;
+  text-decoration-skip-ink: none;
+  background-color: plum;
+  outline: dotted black 2px;
 }
 
 /* Typography */
