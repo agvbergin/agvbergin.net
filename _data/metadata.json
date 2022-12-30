@@ -1,0 +1,16 @@
+{
+    "title": "Ann Bergin",
+    "url": "https://agvbergin.net/",
+    "language": "en",
+    "description": "The personal website of Ann Bergin (@agvbergin).",
+    "feed": {
+      "subtitle": "The personal website of Ann Bergin (@agvbergin).",
+      "filename": "feed.xml",
+      "path": "/feed.xml",
+      "id": "https://agvbergin.net/"
+    },
+    "author": {
+      "name": "Ann Bergin",
+      "url": "https://agvbergin.net/"
+    }
+  }
