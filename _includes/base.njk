@@ -1,17 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ metadata.language }}">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title or metadata.title }}</title>
     <link rel="stylesheet" href="{{ '/css/style.css' | url }}">
-    <title>{{ title }}</title>
-    <meta name="description" content="The personal website of Ann Bergin (@agvbergin).">
+    
+    <meta name="author" content="{{ metadata.author.name }}">
+    <meta name="description" content="{{ metadata.description }}">
     <meta name="generator" content="Eleventy v1.0.2">
+    
+    <link rel="alternate" href="https://agvbergin.net/feed.xml" type="application/atom+xml" title="Atom 0.3">
+    <link rel="canonical" href="{{ metadata.url }}">
+
+    <link href="https://twitter.com/agvbergin" rel="me">
+    <link href="https://github.com/agvbergin" rel="me">
+    <link href="https://agvbergin.net/" rel="me">
+    <link href="https://mastodon.me.uk/@agvbergin" rel="me">
 </head>
 <body>
     <header>
-        <a href="/"><img alt="Home" class="avatar" width="100" height="100" src="{{ '/img/coffeeMini.png' | url }}" alt=""></a>
+        <a href="/"><img alt="Home" class="avatar" width="100" height="100" src="{{ '/img/coffeeMini.png' | url }}"></a>
         <nav>
         <ul role="list">
             <li><a href="{{ '/blog/' | url }}">Blog</a></li>
