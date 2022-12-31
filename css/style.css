@@ -160,13 +160,10 @@ header a {
   font-family: sans-serif;
 }
 
-a:link {
+a:link, a:visited {
   color: black;
+  text-decoration-skip-ink: none;
 } 
-
-a:visited {
-  color: black;
-}
 
 a:hover {
   text-decoration: underline solid 5px;
@@ -178,6 +175,11 @@ a:focus, a:active {
   text-decoration-skip-ink: none;
   background-color: plum;
   outline: dotted black 2px;
+}
+
+[aria-current="page"] {
+  text-decoration: underline solid 5px;
+  text-decoration-skip-ink: none;
 }
 
 /* Typography */
