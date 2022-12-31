@@ -1,6 +1,7 @@
 ---
 layout: base.njk
 title: "Blog"
+tags: pages
 ---
 
 # Blog
