@@ -21,10 +21,24 @@
 </head>
 <body>
     <header>
-        <a href="/"><img alt="Home" class="avatar" width="100" height="100" src="{{ '/img/coffeeMini.png' | url }}"></a>
+        <img alt="" class="avatar" width="100" height="100" src="{{ '/img/coffeeMini.png' | url }}">
+        {% set currentUrl %}{{ page.url }}{% endset %}
+
         <nav>
         <ul role="list">
-            <li><a href="{{ '/blog/' | url }}">Blog</a></li>
+            <li>
+            <a {% if currentUrl === '/' %}aria-current="page"{% endif %} href="/">Home</a>
+            </li>
+
+            {% for page in collections.pages %}
+            <li>
+            <a
+                {% if currentUrl === page.url %}aria-current="page"{% endif %}
+                href="{{ page.url }}">
+                {{ page.data.title }}
+            </a>
+            </li>
+            {%- endfor %}
             <li><a href="https://github.com/agvbergin">GitHub</a></li>
             <li><a rel="me" href="https://mastodon.me.uk/@agvbergin">Mastodon</a></li>
         </ul>
