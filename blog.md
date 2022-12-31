@@ -6,8 +6,10 @@ tags: pages
 
 # Blog
 
-<ul class="blog-list" role="list">
+This is where the blog archive lives!
+
+<ul class="blog-list">
 {% for blog in collections.blog %}
-<li><a href="{{ blog.url }}">{{ blog.data.title }}</a></li>
+<li><a href="{{ blog.url }}">{{ blog.data.title }}</a> {{ blog.data.date | postDate}}</li>
 {% endfor %}
 </ul>

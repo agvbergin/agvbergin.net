@@ -15,6 +15,13 @@ module.exports = function(eleventyConfig) {
 
     // 11ty Rocks year shortcode
     eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
+
+    // Import prior to `module.exports` within `.eleventy.js`
+    const { DateTime } = require("luxon");
+
+    eleventyConfig.addFilter("postDate", (dateObj) => {
+    return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
+});
   
   };
   
