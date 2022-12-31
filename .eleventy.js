@@ -12,6 +12,9 @@ module.exports = function(eleventyConfig) {
 
     // RSS plugin
     eleventyConfig.addPlugin(pluginRss);
+
+    // 11ty Rocks year shortcode
+    eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
   
   };
   
