@@ -81,7 +81,7 @@ body {
   flex-wrap: nowrap;
 }
 
-header, main {
+body header, body main {
   padding: 1em 1em 0 1em;
 }
 
@@ -105,33 +105,7 @@ main {
   max-width: 66ch;
 }
 
-article > * + * {
-  margin-top: 1.5rem;
-}
-
-article > p:last-child {
-  margin-bottom: 1em;
-}
-
-blockquote {
-  border-left: solid black 3px;
-  padding-left: 10px;
-}
-
-blockquote > p {
-  font-style: italic;
-}
-
-pre {
-  border: solid black 3px;
-  border-radius: 5px;
-  padding: 10px;
-  overflow: auto;
-  font-size: inherit;
-  line-height: 1;
-}
-
-header {
+body header {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -152,6 +126,36 @@ ul.blog-nav {
   display: flex;
   flex-wrap: wrap;
   padding: 0;
+}
+
+article > header {
+  display: initial;
+}
+
+article > * + * {
+  margin-top: 1rem;
+}
+
+article > p:last-child {
+  margin-bottom: 1rem;
+}
+
+blockquote {
+  border-left: solid black 3px;
+  padding-left: 10px;
+}
+
+blockquote > p {
+  font-style: italic;
+}
+
+pre {
+  border: solid black 3px;
+  border-radius: 5px;
+  padding: 10px;
+  overflow: auto;
+  font-size: inherit;
+  line-height: 1;
 }
 
 /* Links */
