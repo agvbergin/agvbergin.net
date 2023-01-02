@@ -101,10 +101,6 @@ footer {
   padding-bottom: 0.5em;
 }
 
-main {
-  max-width: 66ch;
-}
-
 body header {
   display: flex;
   flex-wrap: wrap;
