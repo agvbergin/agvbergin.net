@@ -5,7 +5,7 @@
 }
 
 /* Modified version of Andy Bell's Modern CSS reset */
-/* https://github.com/Andy-set-studio/modern-css-reset */
+/* @link https://github.com/Andy-set-studio/modern-css-reset */
 
 /* Box sizing rules */
 *,
@@ -73,7 +73,9 @@ select {
   }
 }
 
-/* End of reset */
+/* Macro Layout */
+
+/* Sticky footer, min body height inherited from core body default */
 
 body {
   display: flex;
@@ -81,29 +83,17 @@ body {
   flex-wrap: nowrap;
 }
 
-body header, body main {
-  padding: 1em 1em 0 1em;
-}
-
-footer {
-  padding: 1em 1em 0 1em;
-}
-
 main {
-  flex: 1 0 auto; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
-  max-width: 66ch;
-  margin-inline-start: auto;
-  margin-inline-end: auto;
+  flex: 1 0 auto;
 }
 
 footer {
-  flex-shrink: 0; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+  flex-shrink: 0;
   padding-bottom: 0.5em;
 }
 
 body header {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
@@ -111,17 +101,25 @@ body header {
 nav > ul {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 0 0 1em;
+  margin: 0;
+  padding: 0;
 }
 
 nav > ul li {
-  margin-right: 0.5em;
+  padding: 0 0 0 1em; /* bc gap doesn't work on old iOS Safarai in lists */
 }
 
 ul.blog-nav {
   display: flex;
   flex-wrap: wrap;
   padding: 0;
+}
+
+main {
+  max-width: 66ch;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  padding: 0.5em;
 }
 
 article > header {
