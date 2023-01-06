@@ -29,8 +29,8 @@ dd {
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role='list'],
-ol[role='list'] {
+ul[role="list"],
+ol[role="list"] {
   list-style: none;
 }
 
@@ -158,17 +158,19 @@ header a {
   font-family: sans-serif;
 }
 
-a:link, a:visited {
+a:link,
+a:visited {
   color: black;
   text-decoration-skip-ink: none;
-} 
+}
 
 a:hover {
   text-decoration: underline solid 5px;
   text-decoration-skip-ink: none;
 }
 
-a:focus, a:active {
+a:focus,
+a:active {
   text-decoration: underline solid 5px;
   text-decoration-skip-ink: none;
   background-color: plum;
@@ -182,7 +184,10 @@ a:focus, a:active {
 
 /* Typography */
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-family: sans-serif;
 }
 
