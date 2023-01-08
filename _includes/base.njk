@@ -1,56 +1,65 @@
 <!DOCTYPE html>
 <html lang="{{ metadata.language }}">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title or metadata.title }}</title>
-    <link rel="stylesheet" href="{{ '/css/style.css' | url }}">
-    
-    <meta name="author" content="{{ metadata.author.name }}">
-    <meta name="description" content="{{ metadata.description }}">
-    <meta name="generator" content="Eleventy v1.0.2">
-    
-    <link rel="alternate" href="https://agvbergin.net/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
-    <link rel="canonical" href="{{ metadata.url }}">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{{ title or metadata.title }}</title>
+        <style>
+            :root {
+                font-size: 125%;
+            }
+        </style>
+        <link rel="stylesheet" href="{{ '/css/style.css' | url }}">
 
-    <link href="https://twitter.com/agvbergin" rel="me">
-    <link href="https://github.com/agvbergin" rel="me">
-    <link href="https://agvbergin.net/" rel="me">
-    <link href="https://mastodon.me.uk/@agvbergin" rel="me">
-</head>
-<body>
-    <header>
-        <img alt="" width="100" height="100" src="{{ '/img/coffeeMini.png' | url }}">
-        {% set currentUrl %}{{ page.url }}{% endset %}
+        <meta name="author" content="{{ metadata.author.name }}">
+        <meta name="description" content="{{ metadata.description }}">
+        <meta name="generator" content="Eleventy v1.0.2">
 
-        <nav>
-        <ul role="list">
-            <li>
-            <a {% if currentUrl === '/' %}aria-current="page"{% endif %} href="/">Home</a>
-            </li>
+        <link rel="alternate" href="https://agvbergin.net/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
+        <link rel="canonical" href="{{ metadata.url }}">
 
-            {% for page in collections.pages %}
-            <li>
-            <a
-                {% if currentUrl === page.url %}aria-current="page"{% endif %}
-                href="{{ page.url }}">
-                {{ page.data.title }}
-            </a>
-            </li>
-            {%- endfor %}
-            <li><a href="https://github.com/agvbergin">GitHub</a></li>
-            <li><a href="https://mastodon.me.uk/@agvbergin" rel="me">Mastodon</a></li>
-        </ul>
-        </nav>
-    </header>
-    <main>
-{{ content | safe }}
-    </main>
-    <footer>
-    <p>
-    Copyright Ann Bergin {% year %}. Hosted on <a href="https://www.netlify.com/">Netlify</a>.
-    </p>
-    </footer>
-</body>
+        <link href="https://twitter.com/agvbergin" rel="me">
+        <link href="https://github.com/agvbergin" rel="me">
+        <link href="https://agvbergin.net/" rel="me">
+        <link href="https://mastodon.me.uk/@agvbergin" rel="me">
+    </head>
+    <body>
+        <header>
+            <img alt="" width="100" height="100" src="{{ '/img/coffeeMini.png' | url }}">
+            {% set currentUrl %}{{ page.url }}{% endset %}
+
+            <nav>
+                <ul role="list">
+                    <li>
+                        <a {% if currentUrl === '/' %} aria-current="page" {% endif %} href="/">Home</a>
+                    </li>
+
+                    {% for page in collections.pages %}
+                        <li>
+                            <a {% if currentUrl === page.url %} aria-current="page" {% endif %} href="{{ page.url }}">
+                                {{ page.data.title }}
+                            </a>
+                        </li>
+                    {%- endfor %}
+                    <li>
+                        <a href="https://github.com/agvbergin">GitHub</a>
+                    </li>
+                    <li>
+                        <a href="https://mastodon.me.uk/@agvbergin" rel="me">Mastodon</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            {{ content | safe }}
+        </main>
+        <footer>
+            <p>
+                Copyright Ann Bergin
+                {% year %}. Hosted on
+                <a href="https://www.netlify.com/">Netlify</a>.
+            </p>
+        </footer>
+    </body>
 </html>
