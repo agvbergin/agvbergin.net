@@ -24,12 +24,6 @@
         <main>
             {{ content | safe }}
         </main>
-        <footer>
-            <p>
-                Copyright Ann Bergin
-                {% year %}. Hosted on
-                <a href="https://www.netlify.com/">Netlify</a>.
-            </p>
-        </footer>
+        {% include "_footer.njk" %}
     </body>
 </html>
