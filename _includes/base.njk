@@ -14,10 +14,11 @@
         <link rel="alternate" href="https://agvbergin.net/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
         <link rel="canonical" href="{{ metadata.url }}">
 
-        <link href="https://twitter.com/agvbergin" rel="me">
-        <link href="https://github.com/agvbergin" rel="me">
-        <link href="https://agvbergin.net/" rel="me">
-        <link href="https://mastodon.me.uk/@agvbergin" rel="me">
+        <link href="{{ metadata.author.url }}" rel="me">
+        <link href="{{ metadata.author.github }}" rel="me">
+        <link href="{{ metadata.author.mastodon }}" rel="me">
+        <link href="{{ metadata.author.twitter }}" rel="me">
+        <link href="{{ metadata.author.codepen }}" rel="me">
     </head>
     <body>
         {% include "_header.njk" %}
