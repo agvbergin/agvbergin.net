@@ -1,12 +1,13 @@
 ---
 layout: base.njk
 title: "Blog"
+description: "This is where the blog archive lives! For real!"
 tags: pages
 ---
 
 # Blog
 
-This is where the blog archive lives!
+{{ description }}
 
 <ul class="blog-list">
 {% for blog in collections.blog %}
