@@ -97,14 +97,14 @@ body header {
   align-items: center;
 }
 
-nav > ul {
+nav ul {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
 }
 
-nav > ul li {
+nav ul li + li {
   padding: 0 0 0 1em; /* bc gap doesn't work on old iOS Safarai in lists */
 }
 
