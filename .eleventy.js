@@ -5,10 +5,12 @@ module.exports = function (eleventyConfig) {
 
   // Copy `img/` to `_site/img`
   eleventyConfig.addPassthroughCopy("img");
+  eleventyConfig.setServerPassthroughCopyBehavior("img");
 
   // Copy `css/fonts/` to `_site/css/fonts`
   // Keeps the same directory structure.
   eleventyConfig.addPassthroughCopy("css");
+  eleventyConfig.setServerPassthroughCopyBehavior("css");
 
   // RSS plugin
   eleventyConfig.addPlugin(pluginRss);
