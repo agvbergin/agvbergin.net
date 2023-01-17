@@ -1,0 +1,61 @@
+/* Typography */
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: sans-serif;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+h1 {
+  font-size: 2.488rem;
+}
+
+h2 {
+  font-size: 2.074rem;
+}
+
+h3 {
+  font-size: 1.728rem;
+}
+
+h4 {
+  font-size: 1.44rem;
+}
+
+h5 {
+  font-size: 1.2rem;
+}
+
+footer {
+  font-size: small;
+  text-align: center;
+}
+
+/* Links */
+
+a:link,
+a:visited {
+  color: black;
+  text-decoration-skip-ink: none;
+}
+
+a:hover {
+  text-decoration: underline solid 5px;
+  text-decoration-skip-ink: none;
+}
+
+a:focus,
+a:active {
+  text-decoration: underline solid 5px;
+  text-decoration-skip-ink: none;
+  background-color: plum;
+  outline: dotted black 2px;
+}
+
+[aria-current="page"] {
+  text-decoration: underline solid 5px;
+  text-decoration-skip-ink: none;
+}
