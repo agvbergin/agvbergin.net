@@ -1,0 +1,74 @@
+/* Macro Layout */
+
+/* Sticky footer, min body height inherited from core body default */
+
+body {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main {
+    flex: 1 0 auto;
+    /* center and limit character width */
+    max-width: 66ch;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    padding: 0.5em;
+  }
+  footer {
+    flex-shrink: 0;
+    padding-bottom: 0.5em;
+  }
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  padding: 0 0 1em 1em; /* bc gap doesn't work on old iOS Safarai in lists */
+}
+
+ul.blog-nav {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+article header {
+  display: initial;
+}
+
+article > * + * {
+  margin-top: 1rem;
+}
+
+article *:last-child {
+  margin-bottom: 1rem;
+}
+
+blockquote {
+  border-left: solid black 3px;
+  padding-left: 10px;
+}
+
+blockquote > p {
+  font-style: italic;
+}
+
+pre {
+  border: solid black 3px;
+  border-radius: 5px;
+  padding: 10px;
+  overflow: auto;
+  font-size: inherit;
+  line-height: 1;
+}
