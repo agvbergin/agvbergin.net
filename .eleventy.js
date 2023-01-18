@@ -3,12 +3,10 @@ const pluginRss = require("@11ty/eleventy-plugin-rss");
 module.exports = function (eleventyConfig) {
   // Copy `img/` to `_site/img`
   eleventyConfig.addPassthroughCopy("./src/img");
-  eleventyConfig.setServerPassthroughCopyBehavior("./src/img");
 
   // Copy `css/fonts/` to `_site/css/fonts`
   // Keeps the same directory structure.
   eleventyConfig.addPassthroughCopy("./src/css");
-  eleventyConfig.setServerPassthroughCopyBehavior("./src/css");
 
   // RSS plugin
   eleventyConfig.addPlugin(pluginRss);
